@@ -28,7 +28,7 @@ the structure of these objects.
    Mobility workflow.
 
  * Analyze the [structure of the Outgoing Mobility
-   object](https://github.com/erasmus-without-paper/ewp-specs-api-omobilities/blob/stable-v1/response.xsd).
+   object](https://github.com/erasmus-without-paper/ewp-specs-api-omobilities/blob/stable-v3/response.xsd).
    You will need to understand its structure well and make sure your data is
    compatible with it. The `.ewpmobility` file is basically a wrapper for the
    Outgoing Mobility objects.

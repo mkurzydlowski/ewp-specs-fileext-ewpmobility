@@ -1,31 +1,67 @@
 <root:ewp-mobility-file
-    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-omobilities/blob/stable-v1/endpoints/get-response.xsd"
+    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-omobilities/blob/stable-v3/endpoints/get-response.xsd"
     xmlns:root="https://github.com/erasmus-without-paper/ewp-specs-fileext-ewpmobility/tree/stable-v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         https://github.com/erasmus-without-paper/ewp-specs-fileext-ewpmobility/tree/stable-v1
         schema.xsd">
-    <student-mobility-for-studies>
-        <!--
-        This is a very simplified mobility. For a better example, see Outgoing
-        Mobilities API.
-        -->
+    <student-mobility>
         <omobility-id>c442c289-5541-4cae-9edb-8ad83e133613</omobility-id>
         <sending-hei>
             <hei-id>uio.no</hei-id>
+            <ounit-id>140</ounit-id>
+            <iia-id>dd87538e-49e3-44ae-844e-55ad1b819ce9</iia-id>
         </sending-hei>
         <receiving-hei>
             <hei-id>uw.edu.pl</hei-id>
+            <iia-id>549117543</iia-id> <!-- We recommend UUIDs though. -->
         </receiving-hei>
-        <sending-academic-term-ewp-id>2009/2010-2/2</sending-academic-term-ewp-id>
-        <receiving-academic-year-id>2009/2010</receiving-academic-year-id>
+        <sending-academic-term-ewp-id>2022/2023-2/2</sending-academic-term-ewp-id>
+        <receiving-academic-year-id>2022/2023</receiving-academic-year-id>
         <student>
-            <given-names>Mister</given-names>
-            <family-name>Personson</family-name>
+            <given-names>Ivan Petrovich</given-names>
+            <given-names xml:lang="ru-Cyrl">Иван Петрович</given-names>
+            <family-name>Sidorov</family-name>
+            <family-name xml:lang="ru-Cyrl">Сидоров</family-name>
+            <global-id>urn:schac:personalUniqueCode:int:esi:uio.no:1234567890</global-id>
+            <birth-date>1985-05-05</birth-date>
+            <nationality>NO</nationality>
+            <gender>1</gender>
+            <email>ivan@example.com</email>
         </student>
         <status>live</status>
-        <planned-arrival-date>2010-02-01</planned-arrival-date>
-        <planned-departure-date>2010-06-20</planned-departure-date>
-        <eqf-level-studied-at-departure>7</eqf-level-studied-at-departure>
-    </student-mobility-for-studies>
+        <activity-type>student-studies</activity-type>
+        <activity-attributes>long-term</activity-attributes>
+        <agreement-isced-f-code>1234</agreement-isced-f-code>
+        <eqf-level-studied-at-departure>8</eqf-level-studied-at-departure>
+        <nominee-isced-f-code>1234</nominee-isced-f-code>
+        <additional-requirement>
+            <name>Motivation letter</name>
+            <file>f0f4934c-d384-41c3-a455-9bb9a689a5a3</file>
+        </additional-requirement>
+        <additional-requirement>
+            <name>Transcript of Records</name>
+            <file>2f521e8a-d9fd-4f49-9941-df9318bf190f</file>
+        </additional-requirement>
+        <additional-requirement>
+            <name>Language certificate</name>
+            <file>793ca3b8-02db-4573-9164-e84bc9a58f23</file>
+        </additional-requirement>
+        <additional-requirement>
+            <name>Portfolio</name>
+            <file>85ba5392-fd35-4baa-9afa-220537d2ebbe</file>
+        </additional-requirement>
+        <additional-requirement>
+            <name>Portfolio</name>
+            <url>https://www.youtube.com/watch?v=gdg34IFo</url>
+        </additional-requirement>
+        <additional-requirement>
+            <name>CV</name>
+            <file>6f09ac08-454a-4278-a290-16f55663237d</file>
+        </additional-requirement>
+        <additional-requirement>
+            <name>Other document</name>
+            <file>4a483112-d306-4e77-87ff-05b823fb0e0f</file>
+        </additional-requirement>
+    </student-mobility>
 </root:ewp-mobility-file>
